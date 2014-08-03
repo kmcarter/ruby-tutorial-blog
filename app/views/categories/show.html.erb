@@ -1,0 +1,17 @@
+<!-- Blog Entries -->
+	<%= render 'layouts/breadcrumbs', breadcrumbs: @breadcrumbs %>
+	<h1 class="page-header">
+		<%= @category.name %>
+	</h1>
+		
+	<%= render @category.articles unless @category.articles.nil? %>
+
+	<!-- Pager -->
+	<ul class="pager">
+		<li class="previous">
+			<a href="#"><%= icon("hand-o-left") %> Older</a>
+		</li>
+		<li class="next">
+			<a href="#">Newer <%= icon("hand-o-right") %></a>
+		</li>
+	</ul>

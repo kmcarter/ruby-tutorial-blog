@@ -1,0 +1,13 @@
+<!-- Blog Search Well -->
+<div class="well">
+	<h4>Blog Search</h4>
+	<%= form_tag("/search", method: "post") do %>
+	<div class="input-group">
+		<%= text_field_tag("q", nil, class: "form-control") %>
+		<span class="input-group-btn">
+  			<%= button_tag(icon("search"), class: "btn btn-default") %>
+		</span>
+	</div>
+	<% end %>
+	<!-- /.input-group -->
+</div>

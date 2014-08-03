@@ -1,0 +1,39 @@
+<%= render 'layouts/breadcrumbs', breadcrumbs: @breadcrumbs %>
+
+<h1><%= @article.title %></h1>
+<p class="lead">
+	by <a href="#">Start Bootstrap</a>
+</p>
+<hr>
+
+<!-- Date/Time -->
+<p><%= icon("clock") %> Posted on <%= @article.created_at.to_formatted_s(:long) %></p> 
+
+<hr>
+
+<!-- Preview Image -->
+<img class="img-responsive" src="http://placehold.it/900x300" alt="">
+
+<hr>
+
+<!-- Post Content -->
+<p>
+	<%= @article.text %>
+</p>
+	
+<hr>
+
+<!-- Blog Comments -->
+<h2>Comments</h2>
+<%= render @article.comments %>
+
+<!-- Comments Form -->
+<div class="well">
+	<h2>Leave a comment:</h2>
+	<%= render "comments/form" %>
+</div>
+
+<hr/>
+
+<%= link_to icon("long-arrow-left") + ' Back', articles_path, class: "btn btn-default" %>
+<%= link_to icon("edit") + ' Edit', edit_article_path(@article), class: "btn btn-primary" %>

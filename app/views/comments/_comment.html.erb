@@ -1,0 +1,20 @@
+<div class="media">
+	<a class="pull-left" href="#">
+		<img class="media-object img-circle" src="http://placehold.it/64x64" alt="">
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading">
+			<%= comment.commenter %>
+			<small><%= comment.created_at.to_formatted_s(:long) %></small>
+		</h4>
+ 		<%= comment.body %>
+
+ 
+		<p>
+		  <%= link_to icon("times-circle") + ' Delete Comment', [comment.article, comment],
+					   method: :delete,
+					   data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xs" %>
+		</p>
+
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<h2>
+	<%= link_to highlight(search_result.title, params[:q]), article_path(search_result) %>
+</h2>
+<p class="lead">
+	by <a href="index.php">Start Bootstrap</a>
+</p>
+<p><%= icon("clock-o") %> Posted on <%= search_result.created_at.to_formatted_s(:long) %></p>
+<hr>
+<p><%= highlight(search_result.text, params[:q]) %></p>
+<%= link_to icon("edit") + ' Edit', edit_article_path(search_result), class: "btn btn-info" %>
+<%= link_to icon("times-circle") + ' Delete', articles_path, class: "btn btn-danger" %>
+<%= link_to 'Read More ', article_path(search_result), class: "btn btn-primary" %>

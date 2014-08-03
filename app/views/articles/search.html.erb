@@ -1,0 +1,18 @@
+<!-- Blog Entries -->
+
+	<h1 class="page-header">
+		Search Results
+		<small>Your search for '<%= params[:q] %>' returned <%= @articles.nil? ? "0" : @articles.size %> results</small>
+	</h1>
+
+	<%= render partial: 'articles/search_result', collection: @articles unless @articles.nil? %>
+
+	<!-- Pager -->
+	<ul class="pager">
+		<li class="previous">
+			<a href="#"><%= icon("hand-o-left") %> Older</a>
+		</li>
+		<li class="next">
+			<a href="#">Newer <%= icon("hand-o-right") %></a>
+		</li>
+	</ul>

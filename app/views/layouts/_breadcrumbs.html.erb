@@ -1,0 +1,6 @@
+<ol class="breadcrumb">
+	<li><%= link_to 'Home', '/' %></li>
+	<% breadcrumbs.each do |name,path| %>
+		<li><%= link_to name, path %></li>
+	<% end %>
+</ol>

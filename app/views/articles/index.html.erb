@@ -1,0 +1,18 @@
+<!-- Blog Entries -->
+
+	<h1 class="page-header">
+		Listing articles
+		<small>Secondary Text</small>
+	</h1>
+
+	<%= render @articles %>
+
+	<!-- Pager -->
+	<ul class="pager">
+		<li class="previous">
+			<a href="#"><%= icon("hand-o-left") %> Older</a>
+		</li>
+		<li class="next">
+			<a href="#">Newer <%= icon("hand-o-right") %></a>
+		</li>
+	</ul>
