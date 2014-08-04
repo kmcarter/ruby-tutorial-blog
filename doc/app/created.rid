@@ -1,0 +1,15 @@
+Sat, 02 Aug 2014 22:21:40 -0400
+README.rdoc	Thu, 31 Jul 2014 00:20:50 -0400
+app/controllers/application_controller.rb	Sat, 02 Aug 2014 04:14:18 -0400
+app/controllers/articles_controller.rb	Sat, 02 Aug 2014 21:48:59 -0400
+app/controllers/categories_controller.rb	Sat, 02 Aug 2014 21:08:36 -0400
+app/controllers/comments_controller.rb	Sat, 02 Aug 2014 02:45:28 -0400
+app/controllers/welcome_controller.rb	Thu, 31 Jul 2014 00:51:28 -0400
+app/helpers/application_helper.rb	Thu, 31 Jul 2014 00:20:51 -0400
+app/helpers/articles_helper.rb	Thu, 31 Jul 2014 01:07:39 -0400
+app/helpers/categories_helper.rb	Sat, 02 Aug 2014 01:58:42 -0400
+app/helpers/comments_helper.rb	Fri, 01 Aug 2014 02:42:43 -0400
+app/helpers/welcome_helper.rb	Thu, 31 Jul 2014 00:51:28 -0400
+app/models/article.rb	Sat, 02 Aug 2014 17:24:47 -0400
+app/models/category.rb	Sat, 02 Aug 2014 20:46:21 -0400
+app/models/comment.rb	Sat, 02 Aug 2014 03:06:11 -0400

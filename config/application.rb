@@ -25,5 +25,7 @@ module Blog
 
 	# Precompile additional assets
 	#config.assets.precompile += %w( .svg .eot .woff .ttf ) 
+	  
+	#  config.relative_url_root = '/blog'
   end
 end

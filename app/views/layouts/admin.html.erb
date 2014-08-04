@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Admin</title>
+	<%= stylesheet_link_tag 'admin/application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<%= render "layouts/admin_nav" %>
+
+    <!-- Page Content -->
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+			  <ul class="nav nav-sidebar">
+				<li class="active"><a href="#">Overview</a></li>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Analytics</a></li>
+				<li><a href="#">Export</a></li>
+			  </ul>
+			  <ul class="nav nav-sidebar">
+				<li><a href="">Nav item</a></li>
+				<li><a href="">Nav item again</a></li>
+				<li><a href="">One more nav</a></li>
+				<li><a href="">Another nav item</a></li>
+				<li><a href="">More navigation</a></li>
+			  </ul>
+			</div>
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<%= yield %>
+			</div>
+		</div>
+    </div>
+    <!-- /.container -->
+
+	<%= javascript_include_tag 'admin/application', 'data-turbolinks-track' => true %>
+</body>
+</html>

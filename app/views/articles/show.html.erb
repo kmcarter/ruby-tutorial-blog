@@ -35,5 +35,5 @@
 
 <hr/>
 
-<%= link_to icon("long-arrow-left") + ' Back', articles_path, class: "btn btn-default" %>
-<%= link_to icon("edit") + ' Edit', edit_article_path(@article), class: "btn btn-primary" %>
+<%= link_to "#{icon('long-arrow-left')} Back".html_safe, articles_path, class: "btn btn-default" %>
+<%-# link_to "#{icon('edit')} Edit".html_safe, edit_article_path(@article), class: "btn btn-primary" -%>

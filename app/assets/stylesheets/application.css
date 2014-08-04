@@ -10,24 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require bootstrap_wrapper
+ *= require_directory .
  *= require font-awesome
  *= require_self
  */
-
-/*!
- * Start Bootstrap - Blog Home HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-
-footer {
-    margin: 50px 0;
-}
